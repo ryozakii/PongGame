@@ -1,0 +1,31 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+	width: 100%;
+	background-color: hsl(var(--background));
+}
+
+.player {
+	font-size: 2rem;
+}
+
+.vs {
+	font-size: 2rem;
+}
+
+.canvas {
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+}

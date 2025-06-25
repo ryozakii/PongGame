@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(var(--background)); */
+    gap: 100px;
+    
+}
+
+.animations {
+    border: 1px solid hsl(var(--border));
+    width: 400px;
+    border-radius: var(--radius);
+    height: 450px;    
+}

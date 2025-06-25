@@ -1,0 +1,187 @@
+/* .board 
+{
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}; */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*
+{
+  font-family: 'Audiowide', cursive;
+}
+.hd
+{
+  display: none;
+}
+
+
+.nav-arrow
+{
+  display : hidden;
+  width:12px; height:12px;
+  padding-left: 2px;
+  /* position: absolute; */
+  object-fit: fill;
+  /* top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 2em;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1; */
+}
+.image-fit
+{
+  object-fit: fill;
+  width: 4vh;
+  /* height: 100%; */
+  aspect-ratio: 1 / 1;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keep it behind the content */
+}
+/* html
+{
+  background-color: black;
+} */
+/* .test
+
+{
+  font-size: xx-large;
+} */
+.square-width {
+  aspect-ratio : 1 / 1;
+  width:80%;
+}
+.square-height {
+  aspect-ratio : 1 / 1;
+  height:80%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.x-hover:hover::after {
+	content: "X";
+	opacity: 0.4;
+  }
+  
+  .o-hover:hover::after {
+	content: "O";
+	opacity: 0.4;
+  }
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+/* Responsive Design: For smaller screens */
+/*  */
+.strike
+{
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+}
+.strike-row-1 {
+	width: 100%;
+	height: 5%;
+	top: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-2 {
+	width: 100%;
+	height: 5%;
+	top: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-3 {
+	width: 100%;
+	height: 5%;
+	top: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-1 {
+	height: 100%;
+	width: 5%;
+	left: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-2 {
+	height: 100%;
+	width: 5%;
+	left: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-3 {
+	height: 100%;
+	width: 5%;
+	left: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-1 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-2 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(-45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+
+  @media (min-width: 1024px) {
+    .e1 {
+     padding: 10px;
+     border :
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .e2 {
+      width: 340px;
+      height: 340px;
+    }
+  }

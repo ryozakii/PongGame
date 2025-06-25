@@ -1,0 +1,17 @@
+export const GAME_CONSTANTS = {
+  PADDLE_WIDTH: 10,
+  PADDLE_HEIGHT: 150,
+  PADDLE_VELOCITY: 5,
+  BALL_RADIUS: 10,
+  CANVAS_WIDTH: 800, 
+  CANVAS_HEIGHT: 600,
+  INITIAL_BALL_VELOCITY: 5,
+  SPEED_INCREASE_FACTOR: 1.1, // Increase speed by 10% each hit
+  MAX_BALL_SPEED: 15
+} as const;
+
+export const BRACKETS_CONSTANTS = {
+  RECT_WIDTH: 150,
+  RECT_HEIGHT: 50,
+} as const;
+  

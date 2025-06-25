@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas {
+	border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+}
+
+.winner_div {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	padding: 50px;
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+	gap: 20px;
+    background-color: hsl(var(--background));
+}
+
+.winner_name {
+	font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: hsl(var(--primary));
+}
+
+.winner_button {
+	font-size: 1.125rem;
+    font-weight: 600;
+}

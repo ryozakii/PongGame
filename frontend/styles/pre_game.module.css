@@ -1,0 +1,131 @@
+.container {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  background-color: hsl(var(--background));
+}
+.main {
+display: flex;
+flex-direction: ROW;
+align-items: center;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+gap: 50px;
+padding: 20px;
+}
+
+.content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: max-content;
+background-color: hsl(var(--background));
+width: 100%;
+border-radius: var(--radius);
+gap: 10px;
+}
+
+
+.stadium {
+position: relative;
+width: 20vw;
+height: 10vw;
+background-color: hsl(var(--background));
+border: 1px solid hsl(var(--border));
+margin: auto;
+border-radius: var(--radius);
+}
+
+.paddle {
+position: absolute;
+width: 3%;
+height: 40%;
+background-color: hsl(var(--primary));
+}
+
+.left_paddle {
+top: 10%;
+left: 0%;
+}
+
+.right_paddle {
+top: 50%;
+right: 0%;
+}
+
+.ball {
+position: absolute;
+width: 5%;
+aspect-ratio: 1 / 1;
+background-color: hsl(var(--primary));
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.btns {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+padding: 10px;
+
+}
+
+
+.players {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.player {
+width: 200px;
+}
+
+.vs {
+font-size: larger;
+font-weight: bold;
+color: hsl(var(--primary));
+}
+
+.radiogroup {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 20px;
+}
+
+.winingmethod {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 20px;
+}
+
+.startgame {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.hint {
+font-size: 0.8rem;
+color: hsl(var(--primary));
+width: max-content;
+padding: 10px;
+}
+
+.hint:hover {
+  cursor: pointer;
+}

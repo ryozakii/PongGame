@@ -1,0 +1,66 @@
+.container {
+	/* border: 2px dotted blue; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.canvas {
+	/* border: 2px solid black; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+	width: 100%;
+	background-color: hsl(var(--background));
+}
+
+.player {
+	font-size: 2rem;
+}
+
+.vs {
+	font-size: 2rem;
+}
+
+.game {
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+}
+
+.winner_div {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	/* padding: 50px; */
+	padding: 50px 10px;
+	border: 1px solid hsl(var(--border));
+	border-radius: var(--radius);
+	background-color: hsl(var(--background));
+	gap: 20px
+}
+
+.winner_name {
+	font-size: 2.25rem; /* Assuming text-4xl corresponds to 2.25rem */
+    font-weight: bold;
+    text-align: center;
+	color: hsl(var(--forground));
+}
+
+.winner_button {
+	font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+}

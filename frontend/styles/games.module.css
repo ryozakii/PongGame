@@ -1,0 +1,87 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.card {
+	width: 360px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	transition: all 0.5s ease;
+	z-index: 1;
+}
+.description {
+	color: hsl(var(--secondary-forground));
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+  
+  }
+
+  .card:hover {
+	width: 600px;	
+	background-color: #b8b8b8;
+	box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+  }
+  .cards:hover > .card:not(:hover) {
+	filter: blur(5px);
+	/* transform: scale(0.9); */
+	box-shadow: 0 0 5px rgba(37, 99, 235, 0.2);
+  }
+.local_game_background::before,
+.online_game_background::before,
+.tournament_background::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(1px);
+	z-index: -1;
+	opacity: 0.8;
+}
+
+.local_game_background::before {
+	background-image: url('../assets/images/ultron.png');
+}
+
+.online_game_background::before {
+	background-image: url('../assets/images/online1.png');
+}
+
+.tournament_background::before {
+	background-image: url('../assets/images/gg.png');
+} 
+
+.local_game_background, .online_game_background, .tournament_background {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(37, 99, 235, 0.2);
+	background-blend-mode: multiply;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}

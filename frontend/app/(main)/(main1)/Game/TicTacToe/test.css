@@ -1,0 +1,186 @@
+/* .board 
+{
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}; */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*
+{
+  font-family: 'Audiowide', cursive;
+}
+.hd
+{
+  display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.dots::after {
+  content: "";
+  display: inline-block;
+  animation: dots 1.5s steps(4, end) infinite;
+}
+.dots:hover::after
+{
+  content : "x";
+  animation : none;
+
+}
+
+
+
+@keyframes dots {
+  0% {
+    content: "Matchmaking";
+  }
+  25% {
+    content: "Matchmaking.";
+  }
+  50% {
+    content: "Matchmaking..";
+  }
+  75% {
+    content: "Matchmaking...";
+  }
+  100% {
+    content: "Matchmaking";
+  }
+}
+/*  */
+/* html
+{
+  background-color: black;
+} */
+/* .test
+
+{
+  font-size: xx-large;
+} */
+.square-width {
+  aspect-ratio : 1 / 1;
+  width:80%;
+}
+.square-height {
+  aspect-ratio : 1 / 1;
+  height:80%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.x-hover:hover::after {
+	content: "X";
+	opacity: 0.4;
+  }
+  
+  .o-hover:hover::after {
+	content: "O";
+	opacity: 0.4;
+  }
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+/* Responsive Design: For smaller screens */
+/*  */
+.strike
+{
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+}
+.strike-row-1 {
+	width: 100%;
+	height: 5%;
+	top: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-2 {
+	width: 100%;
+	height: 5%;
+	top: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-3 {
+	width: 100%;
+	height: 5%;
+	top: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-1 {
+	height: 100%;
+	width: 5%;
+	left: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-2 {
+	height: 100%;
+	width: 5%;
+	left: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-3 {
+	height: 100%;
+	width: 5%;
+	left: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-1 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-2 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(-45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+
+  @media (min-width: 1024px) {
+    .e1 {
+     padding: 10px;
+     border :
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .e2 {
+      width: 340px;
+      height: 340px;
+    }
+  }
